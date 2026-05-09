@@ -1,0 +1,78 @@
+@import "./colours.css";
+@font-face {
+  font-family: "Fira Code";
+  src: url("/FiraCodeNerdFontMono-Medium.ttf");
+}
+@font-face {
+  font-family: "Maple Mono";
+  src: url("/MapleMono-CN.ttf");
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--background);
+    color: var(--text);   
+    border: 5px solid red;
+    border-style: inset;
+}
+#parent{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    /* white-space:pre; */
+    user-select: none;
+}
+#make_rainbow {
+    /* font-family: "Maple Mono", monospace; */
+    /* font-family: 'Courier New', Courier, monospace; */
+    white-space:pre;
+    /* user-select: none; */
+}
+#cat{
+    position: absolute; 
+    bottom: 1em;       
+}
+#meow{
+    position: absolute; 
+    bottom: 4.5em; 
+}
+#catSitting {
+    position: absolute; 
+    bottom: 0em; 
+}
+#theme-selector {
+    position: absolute; 
+    top: 1em;
+}
+#soks {
+    display: flex;
+    align-items: center;
+    transform: translateY(-10em);
+    white-space: pre;
+}
+#text {
+    display: flex;
+    /* align-items: center; */
+    transform: translateY(-9em)
+}
+.heart {
+    position: absolute;
+}
+@keyframes rainbow {
+    0%   { color: var(--red); }
+    20%  { color: var(--orange); }
+    40%  { color: var(--yellow); }
+    60%  { color: var(--green); }
+    80%  { color: var(--blue); }
+    100% { color: var(--purple); }
+}
+
+.rainbow {
+    animation: 2s infinite rainbow;
+} 

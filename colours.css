@@ -1,0 +1,67 @@
+.catppuccin {
+    --background: #1e1e2e;
+    --background-light: #2d2c3e;
+    --background-lighter: #45475a;
+    --background-dark: #181825;
+
+    --text: #cdd6f4;
+    --text-dark: #181825;
+    --text-disabled: #857da8;
+
+    --primary: #cba6f7;
+    --primary-b: #a177d1;
+    --secondary: #fab387;
+    --secondary-b: #f58e6a;
+    --tertiary: #89b4fa;
+    --four: #f38ba8;
+
+    --red: #f38ba8;
+    --red-b: #dd6887;
+    --orange: #fab387;
+    --orange-b: #f58e6a;
+    --yellow: #f9e2af;
+    --yellow-b: #fbd98d;
+    --green: #a6e3a1;
+    --green-b: #83d37d;
+    --blue: #89b4fa;
+    --blue-b: #6c99e2;
+    --purple: #cba6f7;
+    --purple-b: #a177d1;
+
+    --link: #89b4fa;
+    --link-b: #6c99e2;
+}
+
+.kanagawa {
+    --background: #1f1f28;
+    --background-light:#2a2a37;
+    --background-lighter:#39394c;
+    --background-dark: #1f1f28;
+
+    --text: #DCD7BA;
+    --text-dark: #1f1f28;
+    --text-disabled: #727169;
+
+    --primary: #6A946A;
+    --primary-b: #5f7f5f;
+    --secondary: #c0a36e;
+    --secondary-b: #a28757;
+    --tertiary: #7e9cd8;
+    --four: #957FB8;
+
+    --red: #c34043;
+    --red-b: #ae4143;
+    --orange: #d18658;
+    --orange-b: #b47148;
+    --yellow: #c0a36e;
+    --yellow-b: #ac8e5a;
+    --green: #76946A;
+    --green-b: #5f7f5f;
+    --blue: #7E9CD8;
+    --blue-b: #6980ae;
+    --purple: #957FB8;
+    --purple-b: #675681;
+
+    --link: #7E9CD8;
+    --link-b: #6980ae;
+}
