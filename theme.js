@@ -22,8 +22,24 @@ window.addEventListener("keydown", function(event) {
         const newTheme = themes[k];
         setTheme(currentTheme, newTheme);
         document.getElementById("theme").textContent = newTheme;
-        k = (k + 1) % themes.length
+        k = (k - 1) % themes.length
+        if (k == -1) { k = themes.length - 1 }
     }
+});
+
+document.getElementById("right").addEventListener("click", function() {
+    const newTheme = themes[k];
+    setTheme(currentTheme, newTheme);
+    document.getElementById("theme").textContent = newTheme;
+    k = (k + 1) % themes.length
+});
+
+document.getElementById("left").addEventListener("click", function() {
+    const newTheme = themes[k];
+    setTheme(currentTheme, newTheme);
+    document.getElementById("theme").textContent = newTheme;
+    k = (k - 1) % themes.length
+    if (k == -1) { k = themes.length - 1 }
 });
 
 function setTheme(oldTheme, newTheme) {

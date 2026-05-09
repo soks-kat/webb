@@ -1,6 +1,6 @@
 window.addEventListener("load", function() {
-    setTimeout(mau, Math.random() * 7 * 1000)
-    setTimeout(sit, Math.random() * 10 * 1000)
+    setTimeout(mau, (Math.random() * 7 + 2) * 1000)
+    setTimeout(sit, (Math.random() * 10 + 2) * 1000)
 }, false);
 
 // cat animation
@@ -84,7 +84,7 @@ function mau() {
         },
         2000
     );
-    setTimeout(mau, Math.random() * 10 * 1000)
+    setTimeout(mau, (Math.random() * 15 + 10) * 1000)
 }
 
 //sit
@@ -96,7 +96,7 @@ function sit() {
         },
         4000
     );
-    setTimeout(sit, Math.random() * 15 * 1000)
+    setTimeout(sit, (Math.random() * 15 + 5) * 1000)
 }
 
 //better random
