@@ -1,25 +1,32 @@
 @import "./colours.css";
+
 :root {
     --border-radius: 7px;
     --offset: -7em;
 }
+
 @font-face {
-  font-family: "Fira Code";
-  src: url("/FiraCodeNerdFontMono-Medium.ttf");
+    font-family: "Fira Code";
+    src: url("/FiraCodeNerdFontMono-Medium.ttf");
 }
+
 @font-face {
-  font-family: "Maple Mono";
-  src: url("/MapleMono-CN.ttf");
+    font-family: "Maple Mono";
+    src: url("/MapleMono-CN.ttf");
 }
-html, body {
+
+html,
+body {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background: var(--background);
-    color: var(--text);   
+    color: var(--text);
 }
-#parent{
+
+#parent {
     height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -30,21 +37,25 @@ body{
     /* white-space:pre; */
     user-select: none;
 }
-#cat{
-    position: absolute; 
-    bottom: 1em;       
+
+#cat {
+    position: absolute;
+    bottom: 1em;
     white-space: pre;
 }
-#meow{
-    position: absolute; 
-    bottom: 4.5em; 
+
+#meow {
+    position: absolute;
+    bottom: 4.5em;
     white-space: pre;
 }
+
 #catSitting {
-    position: absolute; 
-    bottom: 0em; 
+    position: absolute;
+    bottom: 0em;
     white-space: pre;
 }
+
 #soks {
     display: flex;
     align-items: center;
@@ -53,9 +64,11 @@ body{
     letter-spacing: -0.3px;
     line-height: 1em;
 }
+
 .heart {
     position: absolute;
 }
+
 #text {
     display: flex;
     flex-direction: column;
@@ -64,15 +77,26 @@ body{
     transform: translateY(var(--offset));
     width: 20%;
 }
+
 #text div {
     padding: 0.5em;
 }
+
 #theme-selector {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+#theme:hover {
+    text-decoration: underline;
+}
+
+#about:hover {
+    text-decoration: underline;
+}
+
 #border {
     position: absolute;
     border: 2px solid var(--primary);
@@ -80,6 +104,7 @@ body{
     width: calc(100% - 1.5em);
     height: calc(100% - 1.5em);
 }
+
 #container {
     position: absolute;
     background: var(--background);
@@ -89,25 +114,48 @@ body{
     border-radius: var(--border-radius);
     transform: translateY(-3em);
 }
+
 #container pre {
     text-align: center;
     transform: translateY(1em);
     line-height: 1.1em;
 }
+
 #container div {
     transform: translate(1em, 1em);
     line-height: 1.5em;
 }
+
 @keyframes rainbow {
-    0%   { color: var(--red); }
-    16%  { color: var(--orange); }
-    33%  { color: var(--yellow); }
-    50%  { color: var(--green); }
-    66%  { color: var(--blue); }
-    83%  { color: var(--purple); }
-    100% { color: var(--red); }
+    0% {
+        color: var(--red);
+    }
+
+    16% {
+        color: var(--orange);
+    }
+
+    33% {
+        color: var(--yellow);
+    }
+
+    50% {
+        color: var(--green);
+    }
+
+    66% {
+        color: var(--blue);
+    }
+
+    83% {
+        color: var(--purple);
+    }
+
+    100% {
+        color: var(--red);
+    }
 }
 
 .rainbow {
     animation: 2s infinite rainbow;
-} 
+}

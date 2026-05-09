@@ -16,3 +16,8 @@ window.addEventListener("keydown", function(event) {
         in_container = false;
     }
 });
+
+document.getElementById("about").addEventListener("click", function() {
+    container.style.display = "block";
+    in_container = true;
+});
