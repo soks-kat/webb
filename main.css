@@ -76,6 +76,7 @@ body {
     align-items: center;
     transform: translateY(var(--offset));
     width: 20%;
+    min-width: 11em;
 }
 
 #text div {
@@ -108,21 +109,28 @@ body {
 #container {
     position: absolute;
     background: var(--background);
-    width: 50%;
-    height: 70%;
+    /* margin: 10%; */
+    /* margin-top: 2em; */
+    min-height: 30em;
+    min-width: 30em;
     border: 2px solid var(--primary);
     border-radius: var(--border-radius);
     transform: translateY(-3em);
+    padding: 1em;
+    color: var(--text);
+    user-select: none;
+}
+
+#container:focus-visible {
+    outline: none;
 }
 
 #container pre {
     text-align: center;
-    transform: translateY(1em);
     line-height: 1.1em;
 }
 
 #container div {
-    transform: translate(1em, 1em);
     line-height: 1.5em;
 }
 
