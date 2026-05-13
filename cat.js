@@ -51,7 +51,7 @@ function animation() {
 let j = 0;
 const cat = document.getElementById("cat");
 const meow = document.getElementById("meow");
-const heart = document.getElementById("heart");
+const heart_container = document.getElementById("heart");
 const parent = document.getElementById("parent");
 console.log("kai and lia are stupid")
 function moving() {
@@ -109,7 +109,7 @@ hearts = false
 cat.addEventListener("click",
     function(event) {
         const heart = document.createElement('div');
-        heart.innerHTML = "♡"
+        heart.innerHTML = "❤︎"
         heart.className = "heart"
         const purr = new Audio('https://bertran.xyz/media/purr.mp3')
         purr.play()

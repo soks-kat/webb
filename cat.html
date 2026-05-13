@@ -6,6 +6,8 @@
         <meta name="viewport"
             content="width=device-width, initial-scale=1.0">
         <title>meow</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"/>
+        <script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
     </head>
 
     <body>
@@ -30,21 +32,32 @@
                 </div>
                 <div id="about">about me</div>
             </div>
-            <dialog id="container" popover>
-                <pre id="title", class="rainbow">
-⡇⡠ ⢀⣀ ⠄   ⡎⠑ ⢀⣀ ⣰⡀ ⢀⣀ ⡇ ⢀⣀ ⣀⡀   ⡏⢱ ⢀⣀ ⣀⡀ ⠄ ⢀⡀ ⡇ ⢀⣀
-⠏⠢ ⠣⠼ ⠇   ⠣⠔ ⠣⠼ ⠘⠤ ⠣⠼ ⠣ ⠣⠼ ⠇⠸   ⠧⠜ ⠣⠼ ⠇⠸ ⠇ ⠣⠭ ⠣ ⠭⠕</pre>
-                <div id="description">
-                    My name is Kai Catalan Daniels and I am a student at UAB. <br>
-                    I like cats, colourfull things, drawing, climbing and sewing.
-                </div>
+            <dialog id="color-ui" class="container" modal>
+                <pre id="color-title" class="rainbow"></pre>
+                <div id="color-description"></div>
+                <input id="background" type="color" class="colorpick">back</input>
+                <input id="primary" type="color" class="colorpick">pri</input>
+                <input id="text" type="color" class="colorpick">tes</input>
+                <input id="red" type="color" class="colorpick">r</input>
+                <input id="orange" type="color" class="colorpick">o</input>
+                <input id="yellow" type="color" class="colorpick">y</input>
+                <input id="green" type="color" class="colorpick">g</input>
+                <input id="blue" type="color" class="colorpick">b</input>
+                <input id="purple" type="color" class="colorpick">p</input>
+                <button id="finish-colors">ok</button>
+            </dialog>
+            <dialog id="container" class="container" popover>
+                <pre id="title" class="rainbow"></pre>
+                <div id="description"></div>
             </dialog>
         </div>
 
-        <script src="./cat.js"></script>
-        <script src="./logo.js"></script>
-        <script src="./theme.js"></script>
-        <script src="./about.js"></script>
+        <script src="cat.js"></script>
+        <script src="logo.js"></script>
+        <script type="module" src="theme.mjs"></script>
+        <script type="module" src="about.js"></script>
+        <script src="test.js"></script>
+        <!-- <input type="color" data-coloris></input> -->
     </body>
 
 </html>
