@@ -60,8 +60,8 @@ const custom = {
 
 export function get_theme() {
     let themes_copy = [...themes];
-    themes_copy.push(custom);
     // console.log(themes, themes_copy);
+    themes_copy.push(custom);
     return themes_copy;
 }
 
@@ -71,8 +71,9 @@ var themes = [catppuccin, kanagawa, trans];
 window.addEventListener("load", function() {
     // Try to read from local storage, otherwise set to default
     //localStorage.getItem("mytheme") ||
+    //JSON.parse(localStorage.getItem("allThemes")) ||
     console.log("themes loaded: ", localStorage.getItem("allThemes"));
-    currentTheme = 0;
+    currentTheme = localStorage.getItem("mytheme") || 0;
     themes = JSON.parse(localStorage.getItem("allThemes")) || [catppuccin, kanagawa, trans];
     console.log(currentTheme)
 

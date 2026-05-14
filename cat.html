@@ -24,7 +24,7 @@
 
                 <pre id="soks"> </pre>
             </div>
-            <div id="text">
+            <div id="options">
                 <div id="theme-selector">
                     <div id="left">&lt;</div>
                     <div id="theme"></div>
@@ -34,16 +34,17 @@
             </div>
             <dialog id="color-ui" class="container" modal>
                 <pre id="color-title" class="rainbow"></pre>
-                <div id="color-description"></div>
-                <input id="background" type="color" class="colorpick">back</input>
-                <input id="primary" type="color" class="colorpick">pri</input>
-                <input id="text" type="color" class="colorpick">tes</input>
-                <input id="red" type="color" class="colorpick">r</input>
-                <input id="orange" type="color" class="colorpick">o</input>
-                <input id="yellow" type="color" class="colorpick">y</input>
-                <input id="green" type="color" class="colorpick">g</input>
-                <input id="blue" type="color" class="colorpick">b</input>
-                <input id="purple" type="color" class="colorpick">p</input>
+                <div id="color-description">
+                    <input id="background" value="#101010" type="color" class="colorpick">background</input>
+                    <input id="text"       value="#cdd6f4" type="color" class="colorpick">text</input>
+                    <input id="primary"    value="#525252" type="color" class="colorpick">primary</input>
+                    <input id="red"        value="#733737" type="color" class="colorpick">red</input>
+                    <input id="orange"     value="#734E37" type="color" class="colorpick">orange</input>
+                    <input id="yellow"     value="#736237" type="color" class="colorpick">yellow</input>
+                    <input id="green"      value="#3D523C" type="color" class="colorpick">green</input>
+                    <input id="blue"       value="#3D4559" type="color" class="colorpick">blue</input>
+                    <input id="purple"     value="#4E3D59" type="color" class="colorpick">purple</input>
+                </div>
                 <button id="finish-colors">ok</button>
             </dialog>
             <dialog id="container" class="container" popover>

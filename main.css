@@ -68,7 +68,7 @@ body {
     position: absolute;
 }
 
-#text {
+#options {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +78,7 @@ body {
     min-width: 11em;
 }
 
-#text div {
+#options div {
     padding: 0.5em;
 }
 
@@ -146,6 +146,24 @@ body {
 
 .theme_box div:first-child {
     width: 50%;
+}
+
+input[type="color" i] {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+input[type="color" i]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color" i]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
 }
 
 @keyframes rainbow {
