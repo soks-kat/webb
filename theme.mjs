@@ -73,8 +73,8 @@ window.addEventListener("load", function() {
     //localStorage.getItem("mytheme") ||
     //JSON.parse(localStorage.getItem("allThemes")) ||
     console.log("themes loaded: ", localStorage.getItem("allThemes"));
-    currentTheme = localStorage.getItem("mytheme") || 0;
-    themes = JSON.parse(localStorage.getItem("allThemes")) || [catppuccin, kanagawa, trans];
+    currentTheme = 0;
+    themes = [catppuccin, kanagawa, trans];
     console.log(currentTheme)
 
     k = currentTheme;
