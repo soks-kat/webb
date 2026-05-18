@@ -6,8 +6,6 @@
         <meta name="viewport"
             content="width=device-width, initial-scale=1.0">
         <title>meow</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"/>
-        <script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
     </head>
 
     <body>
@@ -27,25 +25,56 @@
             <div id="options">
                 <div id="theme-selector">
                     <div id="left">&lt;</div>
-                    <div id="theme"></div>
+                    <div id="theme" class="clickable"></div>
                     <div id="right">&gt;</div>
                 </div>
-                <div id="about">about me</div>
+                <div id="about" class="clickable">about me</div>
             </div>
             <dialog id="color-ui" class="container" modal>
                 <pre id="color-title" class="rainbow"></pre>
-                <div id="color-description">
-                    <input id="background" value="#101010" type="color" class="colorpick">background</input>
-                    <input id="text"       value="#cdd6f4" type="color" class="colorpick">text</input>
-                    <input id="primary"    value="#525252" type="color" class="colorpick">primary</input>
-                    <input id="red"        value="#733737" type="color" class="colorpick">red</input>
-                    <input id="orange"     value="#734E37" type="color" class="colorpick">orange</input>
-                    <input id="yellow"     value="#736237" type="color" class="colorpick">yellow</input>
-                    <input id="green"      value="#3D523C" type="color" class="colorpick">green</input>
-                    <input id="blue"       value="#3D4559" type="color" class="colorpick">blue</input>
-                    <input id="purple"     value="#4E3D59" type="color" class="colorpick">purple</input>
+                <div id="all-colors">
+                    <div id="main-colors">
+                        <div class="wrap-color">
+                            <input id="background" value="#101010" type="color" class="colorpick"></input>
+                            <label for="background">background</label>
+                        </div>
+                        <div class="wrap-color">
+                            <input id="text"       value="#cdd6f4" type="color" class="colorpick"></input>
+                            <label for="text">text</label>
+                        </div>
+                        <div class="wrap-color">
+                            <input id="primary"    value="#525252" type="color" class="colorpick"></input>
+                            <label for="primary">primary</label>
+                        </div>
+                    </div>
+                    <div id="rainbow-colors">
+                        <div class="wrap-color">
+                            <input id="red"        value="#733737" type="color" class="colorpick"></input>
+                            <label for="red">red</label>
+                        </div>
+                        <div class="wrap-color">
+                            <input id="orange"     value="#734E37" type="color" class="colorpick"></input>
+                            <label for="orange">orange</label>
+                        </div>
+                        <div class="wrap-color">
+                            <input id="yellow"     value="#736237" type="color" class="colorpick"></input>
+                            <label for="yellow">yellow</label>
+                        </div>
+                        <div class="wrap-color">
+                            <input id="green"      value="#3D523C" type="color" class="colorpick"></input>
+                            <label for="green">green</label>
+                        </div>
+                        <div class="wrap-color">
+                            <input id="blue"       value="#3D4559" type="color" class="colorpick"></input>
+                            <label for="blue">blue</label>
+                        </div>
+                        <div class="wrap-color">
+                            <input id="purple"     value="#4E3D59" type="color" class="colorpick"></input>
+                            <label for="purple">purple</label>
+                        </div>
+                    </div>
                 </div>
-                <button id="finish-colors">ok</button>
+                <div id="finish-colors" class="clickable">ok</div>
             </dialog>
             <dialog id="container" class="container" popover>
                 <pre id="title" class="rainbow"></pre>
@@ -58,7 +87,6 @@
         <script type="module" src="theme.mjs"></script>
         <script type="module" src="about.js"></script>
         <script src="test.js"></script>
-        <!-- <input type="color" data-coloris></input> -->
     </body>
 
 </html>
