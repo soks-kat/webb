@@ -1,4 +1,4 @@
-import { writeCSS } from "./css_utils.mjs";
+import { writeCSS } from "./css_utils.js";
 
 const catppuccin = {
     name: "catppuccin",
