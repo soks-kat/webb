@@ -69,6 +69,7 @@ let k = 0;
 let currentTheme = 0
 var themes = [catppuccin, kanagawa, trans];
 window.addEventListener("load", function() {
+    console.log("it works :>")
     // Try to read from local storage, otherwise set to default
     //localStorage.getItem("mytheme") ||
     //JSON.parse(localStorage.getItem("allThemes")) ||
