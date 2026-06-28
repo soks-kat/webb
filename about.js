@@ -1,5 +1,5 @@
-import { readCSS } from "./css_utils.mjs";
-import { get_theme } from "./theme.mjs";
+import { readCSS } from "./css_utils.js";
+import { get_theme } from "./theme.js";
 
 const container = document.getElementById("container")
 
